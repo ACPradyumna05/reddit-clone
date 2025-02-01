@@ -11,6 +11,8 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        redditDark: "#1A1A1B",
+        redditGray: "#272729",
       },
     },
   },
