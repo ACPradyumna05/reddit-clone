@@ -13,10 +13,14 @@ const Sidebar = () => {
     <aside className={`static top-[6.5%] overflow-hidden left-0 w-64 h-screen bg-black text-white p-4 transition-transform ${isOpen ? "translate-x-0" : "-translate-x-64"} md:translate-x-0`}>
       {/* Navigation */}
       <nav className="space-y-2">
+        <button onClick={() => setIsOpen(!isOpen)} className="md:hidden p-2 text-white bg-gray-800 fixed z-2 top-0">
+          {isOpen ? "Close" : "Open"}
+        </button>
         <SidebarItem href="/" icon={Home} text="Home" active />
         <SidebarItem href="/popular" icon={Compass} text="Popular" />
         <SidebarItem href="/explore" icon={Users} text="Explore" />
         <SidebarItem href="/all" icon={BarChart} text="All" />
+        
       </nav>
 
       <div className="border-t border-gray-700 my-4"></div>
@@ -51,10 +55,9 @@ const Sidebar = () => {
       />
       
       {/* Sidebar toggle button */}
-      <button onClick={() => setIsOpen(!isOpen)} className="md:hidden p-2 text-white bg-gray-800">
-        {isOpen ? "Close" : "Open"}
-      </button>
+      
     </aside>
+    
   );
 };
 

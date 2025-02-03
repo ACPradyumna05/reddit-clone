@@ -1,4 +1,5 @@
 import { Search, Bell, MessageCircle, Plus, User } from "lucide-react";
+import Notifications from "./notification";
 
 export default function Header() {
 return (
@@ -21,7 +22,7 @@ return (
 
     {/* Right - Icons */}
     <div className="flex items-center space-x-4">
-        <Bell className="w-6 h-6 cursor-pointer hover:text-gray-400" />
+        <Bell className="w-6 h-6 cursor-pointer hover:text-gray-400" onClick={Notifications}/>
         <MessageCircle className="w-6 h-6 cursor-pointer hover:text-gray-400" />
         <Plus className="w-6 h-6 cursor-pointer hover:text-gray-400" />
         <div className="relative">
