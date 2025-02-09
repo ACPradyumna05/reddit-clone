@@ -34,7 +34,7 @@ const Sidebar = () => {
   return (
     <>
       {/* Sidebar Component */}
-      <aside className={`sticky top-[6.5%] border-r border-gray-700 overflow-hidden left-0 w-64 h-screen bg-black text-white p-4 transition-all duration-300 ${isOpen ? "w-[17.8%]" : "w-0 p-2"} md:translate-x-0`}>
+      <aside className={`static top-[6.5%] overflow-y-scroll border-r border-gray-700 overflow-hidden left-0 h-auto bg-black text-white p-4 transition-all duration-300 ${isOpen ? "w-[17.8%]" : "w-0 p-2"} `}>
         {/* Navigation */}
         <nav className={`space-y-2 transition-all duration-100 ${isOpen ? "translate-x-0" : "-translate-x-64"} `}>
           <SidebarItem href="/" icon={Home} text="Home" active />
