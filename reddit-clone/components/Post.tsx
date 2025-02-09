@@ -10,7 +10,7 @@ interface PostProps {
 
 export default function Post({ title, image, likes, comments, user, userAvatar, timeAgo }: PostProps) {
     return (
-    <div className="bg-gray-900 p-4 rounded-lg mb-4">
+    <div className="bg-black p-4 rounded-lg mb-4">
         {/* User Info */}
         <div className="flex items-center space-x-2">
         <img src={userAvatar} alt="User Avatar" className="w-8 h-8 rounded-full" />

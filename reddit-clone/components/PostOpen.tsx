@@ -29,7 +29,7 @@ const addComment = () => {
 };
 
 return (
-    <div className="flex-1 mx-auto p-4 bg-gray-900 text-white flex flex-col md:flex-row">
+    <div className="flex-1 mx-auto p-4 bg-black text-white flex flex-col md:flex-row">
     {/* Main Post Content */}
     <div className="md:w-2/3 p-4">
         {/* Post Header */}
